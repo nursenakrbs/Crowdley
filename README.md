@@ -1,16 +1,9 @@
 # Crowdley
- Undergrad Freshman Project - An Android application to track the population of campus buildings
-
-03 
-
-CROWDLEY  
+ Undergrad Freshman Project 
 
 An Android  application for Bilkent members to be able to see the level of density of particular areas through a Bilkent map, 
 and the ability to see several different cafés and some certain places (like sports center or Mayfest lawn) in these areas. 
 In addition to this, user will be able to see some specialties about these places like working hours or menus etc.
-
-	
-
 	
 
 Sıla İnci & Melike Arslan: Worked on MapsActivity class and Google Maps API and did the xml of places' pages.
@@ -19,7 +12,6 @@ Nursena Kurubas: Worked on check-in part, wrote the code of OpeningActivity and 
 Selim Özcan & Mehmet Sanisoğlu: Also worked on markers of map and wrote the pages of places.
 
 We all worked together and helped each other's parts. 
-
 
 Organisation and Working of Code
 
