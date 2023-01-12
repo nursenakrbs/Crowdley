@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#74ffb3"
+    tools:context="com.thelaters.cs102project.crowdleyv20.BuildingList">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:background="@android:color/holo_blue_light"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_editor_absoluteY="0dp">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:srcCompat="@mipmap/mylogo" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/imageButton2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/toolbar2"
+        android:layout_marginLeft="17dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="23dp"
+        android:fontFamily="serif-monospace"
+        android:text="BUILDINGS"
+        android:textAlignment="center"
+        android:textColor="?attr/actionModeSplitBackground"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="right"
+        android:layout_marginEnd="9dp"
+        android:layout_marginRight="9dp"
+        android:layout_marginTop="11dp"
+        android:background="@android:color/holo_blue_light"
+        android:onClick="returnMap"
+        app:srcCompat="@android:drawable/ic_dialog_map" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_alignStart="@+id/textView3"
+        android:layout_below="@+id/textView3"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/background_light"
+        android:onClick="openPlace"
+        android:text="A Building" />
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button2"
+        android:layout_alignBottom="@+id/button2"
+        android:layout_alignEnd="@+id/button18"
+        android:layout_alignLeft="@+id/button13"
+        android:layout_alignRight="@+id/button18"
+        android:layout_alignStart="@+id/button13"
+        android:background="@android:color/background_light"
+        android:onClick="openPlace"
+        android:text="B Building" />
+
+    <Button
+        android:id="@+id/button11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/button18"
+        android:layout_alignLeft="@+id/button13"
+        android:layout_alignRight="@+id/button18"
+        android:layout_alignStart="@+id/button13"
+        android:layout_alignTop="@+id/button15"
+        android:background="@android:color/background_light"
+        android:onClick="openPlace"
+        android:text="EA Building" />
+
+    <Button
+        android:id="@+id/button12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/button2"
+        android:layout_alignLeft="@+id/button2"
+        android:layout_alignRight="@+id/button2"
+        android:layout_alignStart="@+id/button2"
+        android:layout_below="@+id/button2"
+        android:layout_marginTop="25dp"
+        android:background="@android:color/background_light"
+        android:onClick="openPlace"
+        android:text="FC Building" />
+
+    <Button
+        android:id="@+id/button13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/button12"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/background_light"
+        android:onClick="openPlace"
+        android:text="FF Building" />
+
+    <Button
+        android:id="@+id/button14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button12"
+        android:layout_alignStart="@+id/button12"
+        android:layout_below="@+id/button12"
+        android:layout_marginTop="12dp"
+        android:background="@android:color/background_light"
+        android:onClick="openPlace"
+        android:text="H Building" />
+
+    <Button
+        android:id="@+id/button15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/button2"
+        android:layout_alignLeft="@+id/button14"
+        android:layout_alignRight="@+id/button2"
+        android:layout_alignStart="@+id/button14"
+        android:layout_below="@+id/button14"
+        android:layout_marginTop="19dp"
+        android:background="@android:color/background_light"
+        android:onClick="openPlace"
+        android:text="Meteksan Market" />
+
+    <Button
+        android:id="@+id/button18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button14"
+        android:layout_alignBottom="@+id/button14"
+        android:layout_alignEnd="@+id/button13"
+        android:layout_alignLeft="@+id/button13"
+        android:layout_alignRight="@+id/button13"
+        android:layout_alignStart="@+id/button13"
+        android:background="@android:color/background_light"
+        android:onClick="openPlace"
+        android:text="Library" />
+
+    <Button
+        android:id="@+id/button19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/button20"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/background_light"
+        android:onClick="openPlace"
+        android:text="SA Building" />
+
+    <Button
+        android:id="@+id/button20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/button14"
+        android:layout_alignLeft="@+id/button15"
+        android:layout_alignRight="@+id/button14"
+        android:layout_alignStart="@+id/button15"
+        android:layout_below="@+id/button15"
+        android:layout_marginTop="14dp"
+        android:background="@android:color/background_light"
+        android:onClick="openPlace"
+        android:text="Sports Hall" />
+
+    <Button
+        android:id="@+id/button21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button12"
+        android:layout_alignEnd="@+id/imageButton2"
+        android:layout_alignRight="@+id/imageButton2"
+        android:layout_marginEnd="9dp"
+        android:layout_marginRight="9dp"
+        android:background="@android:color/background_light"
+        android:onClick="openPlace"
+        android:text="EE Building" />
+
+    <Button
+        android:id="@+id/button22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/button11"
+        android:layout_alignEnd="@+id/button23"
+        android:layout_alignLeft="@+id/button24"
+        android:layout_alignRight="@+id/button23"
+        android:layout_alignStart="@+id/button24"
+        android:background="@android:color/background_light"
+        android:onClick="openPlace"
+        android:text="G Building" />
+
+    <Button
+        android:id="@+id/button23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/button13"
+        android:layout_alignEnd="@+id/button21"
+        android:layout_alignLeft="@+id/button21"
+        android:layout_alignRight="@+id/button21"
+        android:layout_alignStart="@+id/button21"
+        android:background="@android:color/background_light"
+        android:onClick="openPlace"
+        android:text="MA Building" />
+
+    <Button
+        android:id="@+id/button24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button18"
+        android:layout_alignBottom="@+id/button18"
+        android:layout_alignLeft="@+id/button23"
+        android:layout_alignStart="@+id/button23"
+        android:background="@android:color/background_light"
+        android:onClick="openPlace"
+        android:text="SB Building" />
+
+    <Button
+        android:id="@+id/button25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/button19"
+        android:layout_alignEnd="@+id/button22"
+        android:layout_alignLeft="@+id/button22"
+        android:layout_alignRight="@+id/button22"
+        android:layout_alignStart="@+id/button22"
+        android:layout_alignTop="@+id/button19"
+        android:background="@android:color/background_light"
+        android:onClick="openPlace"
+        android:text="V Building" />
+
+
+</RelativeLayout>

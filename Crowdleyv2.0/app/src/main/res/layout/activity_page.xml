@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/holo_blue_light"
+    tools:context="com.thelaters.cs102project.crowdleyv20.page"
+    android:weightSum="1">
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="48dp"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_blue_light"
+        android:gravity="center_horizontal"
+        app:srcCompat="@android:drawable/ic_dialog_map"
+        tools:layout_editor_absoluteX="334dp"
+        tools:layout_editor_absoluteY="16dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_alignTop="@+id/name1"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:onClick="onClick"/>
+
+    <TextView
+        android:id="@+id/name1"
+        android:layout_width="match_parent"
+        android:layout_height="39dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="18dp"
+        android:height="40dp"
+        android:fontFamily="sans-serif"
+        android:gravity="center_horizontal"
+        android:text="NAME"
+        android:textAlignment="gravity"
+        android:textAllCaps="true"
+        android:textColor="@android:color/background_light"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="96dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="176dp"
+        app:srcCompat="@android:drawable/btn_star_big_on"
+        tools:layout_editor_absoluteX="72dp"
+        android:gravity="center_horizontal"
+        tools:layout_editor_absoluteY="101dp"
+        android:layout_weight="0.45"
+        android:layout_marginTop="35dp"
+        android:layout_below="@+id/name1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="137dp"
+        android:layout_column="0"
+        android:layout_row="12"
+        android:height="40dp"
+        android:fontFamily="sans-serif"
+        android:gravity="center_horizontal"
+        android:text="DESCRIPTION"
+        android:textAlignment="gravity"
+        android:textAllCaps="true"
+        android:textColor="@android:color/background_light"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="57dp"
+        tools:layout_editor_absoluteY="405dp"
+        android:layout_marginBottom="27dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/hours1"
+        android:layout_width="420dp"
+        android:layout_height="37dp"
+        android:layout_column="0"
+        android:layout_row="4"
+        android:height="40dp"
+        android:fontFamily="sans-serif"
+        android:gravity="center_horizontal"
+        android:text="HOURS"
+        android:textAlignment="gravity"
+        android:textAllCaps="true"
+        android:textColor="@android:color/background_light"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="64dp"
+        tools:layout_editor_absoluteY="330dp"
+        android:layout_marginBottom="155dp"
+        android:layout_alignBottom="@+id/description"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/clock"
+        android:layout_marginLeft="18dp"
+        android:layout_marginStart="18dp"
+        android:layout_alignBottom="@+id/hours1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/pop"
+        android:layout_alignTop="@+id/pop1"
+        android:layout_alignLeft="@+id/imageView2"
+        android:layout_alignStart="@+id/imageView2" />
+
+    <TextView
+        android:id="@+id/pop1"
+        android:layout_width="match_parent"
+        android:layout_height="39dp"
+        android:height="40dp"
+        android:fontFamily="sans-serif"
+        android:gravity="center_horizontal"
+        android:text="population"
+        android:textAlignment="gravity"
+        android:textAllCaps="true"
+        android:textColor="@android:color/background_light"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="96dp"
+        tools:layout_editor_absoluteY="16dp"
+        android:layout_marginBottom="31dp"
+        android:layout_above="@+id/hours1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>

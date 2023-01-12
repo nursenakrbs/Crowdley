@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.thelaters.csproject.crowdley.CheckinActivity"
+    android:background="#86f9b0">
+
+
+    <Button
+        android:id="@+id/done"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/background_light"
+        android:text="DONE!"
+        android:visibility="invisible"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:id="@+id/button7"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/background_light"
+        android:text="More than 2 hours"
+        android:visibility="invisible"
+        android:layout_below="@+id/button8"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="11dp" />
+
+    <Button
+        android:id="@+id/button8"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/button10"
+        android:layout_marginTop="17dp"
+        android:backgroundTint="@android:color/background_light"
+        android:text="1 -2 hours"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/button9"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@android:color/background_light"
+        android:text="5 - 15 min"
+        android:visibility="invisible"
+        android:layout_below="@+id/textView5"
+        android:layout_alignParentStart="true"
+        android:onClick="onClick"/>
+
+    <Button
+        android:id="@+id/button10"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/background_light"
+        android:text="15 - 30 min"
+        android:visibility="invisible"
+        android:layout_below="@+id/button9"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="13dp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:text="How long will you stay there?"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        android:textSize="30sp"
+        android:visibility="invisible"
+        tools:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/sportsMain"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/speedCafe"
+        android:backgroundTint="@android:color/background_light"
+        android:elevation="0dp"
+        android:text="MAIN CAMPUS SPORTS HALL"
+        android:visibility="gone"
+        android:onClick="onClick"/>
+
+    <Button
+        android:id="@+id/gstmfBui"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/eeBui"
+        android:backgroundTint="@android:color/background_light"
+        android:elevation="0dp"
+        android:text="GSTMF BUILDING"
+        android:visibility="gone"
+        android:onClick="onClick"/>
+
+    <Button
+        android:text="COFFEE BREAK"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/coffeeBreak"
+        style="@style/Widget.AppCompat.Button"
+        android:backgroundTint="@android:color/background_light"
+        android:layout_below="@+id/bBui"
+        android:layout_alignParentStart="true"
+        android:visibility="visible"
+        android:onClick="onClick"/>
+
+    <Button
+        android:text="H BUILDING"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/hBui"
+        style="@style/Widget.AppCompat.Button"
+        android:backgroundTint="@android:color/background_light"
+        android:layout_below="@+id/coffeeBreak"
+        android:layout_alignParentStart="true"
+        android:visibility="visible"
+        android:onClick="onClick"/>
+
+    <Button
+        android:text="MAIN CAMPUS LIBRARY"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/libraryMain"
+        style="@style/Widget.AppCompat.Button"
+        android:elevation="0dp"
+        android:backgroundTint="@android:color/background_light"
+        android:layout_below="@+id/hBui"
+        android:layout_alignParentStart="true"
+        android:visibility="visible"
+        android:onClick="onClick"/>
+
+    <Button
+        android:text="B Building"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/bBui"
+        style="@style/Widget.AppCompat.Button"
+        android:backgroundTint="@android:color/background_light"
+        android:visibility="visible"
+        android:layout_below="@+id/aBui"
+        android:layout_alignParentStart="true"
+        android:onClick="onClick"/>
+
+    <Button
+        android:text="Cafe In"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cafeIn"
+        style="@style/Widget.AppCompat.Button"
+        android:elevation="0dp"
+        android:backgroundTint="@android:color/background_light"
+        android:layout_below="@+id/libraryMain"
+        android:layout_alignParentStart="true"
+        android:visibility="visible"
+        android:onClick="onClick"/>
+
+    <Button
+        android:id="@+id/eaBui"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/cafeIn"
+        android:backgroundTint="@android:color/background_light"
+        android:elevation="0dp"
+        android:text="EA BUILDING"
+        android:visibility="gone"
+        android:onClick="onClick"/>
+
+    <Button
+        android:id="@+id/speedCafe"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/gstmfBui"
+        android:backgroundTint="@android:color/background_light"
+        android:elevation="0dp"
+        android:text="SPEED CAFE"
+        android:visibility="gone"
+        android:onClick="onClick"/>
+
+    <Button
+        android:id="@+id/saBui"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/sportsMain"
+        android:backgroundTint="@android:color/background_light"
+        android:elevation="0dp"
+        android:text="SA BUILDING"
+        android:visibility="gone"
+        android:onClick="onClick"/>
+
+    <Button
+        android:id="@+id/vBui"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/sbBui"
+        android:backgroundTint="@android:color/background_light"
+        android:elevation="0dp"
+        android:text="V BUILDING"
+        android:visibility="gone"
+        android:onClick="onClick"/>
+
+    <Button
+        android:id="@+id/gBui"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/vBui"
+        android:backgroundTint="@android:color/background_light"
+        android:elevation="0dp"
+        android:text="G BUILDING"
+        android:visibility="gone"
+        android:onClick="onClick"/>
+
+    <Button
+        android:id="@+id/meteksanMarket"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/gBui"
+        android:backgroundTint="@android:color/background_light"
+        android:elevation="0dp"
+        android:text="METEKSAN MARKET"
+        android:visibility="gone"
+        android:onClick="onClick"/>
+
+    <Button
+        android:id="@+id/fBui"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/meteksanMarket"
+        android:backgroundTint="@android:color/background_light"
+        android:elevation="0dp"
+        android:text="F BUILDINGS"
+        android:visibility="gone"
+        android:onClick="onClick"/>
+
+    <Button
+        android:id="@+id/eeBui"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/cafeIn"
+        android:backgroundTint="@android:color/background_light"
+        android:elevation="0dp"
+        android:text="ee BUILDING"
+        android:visibility="gone"
+        android:onClick="onClick"/>
+
+    <Button
+        android:id="@+id/sbBui"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/saBui"
+        android:backgroundTint="@android:color/background_light"
+        android:elevation="0dp"
+        android:text="SB BUILDING"
+        android:visibility="gone"
+        android:onClick="onClick"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:background="#86f9b0"
+        android:text="Choose the place you want to check-in"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        android:textSize="24sp"
+        tools:textColor="@android:color/background_light" />
+
+    <SearchView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#86f9b0"
+        android:id="@+id/searchView"
+        android:layout_marginTop="24dp"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="A Building"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/aBui"
+        style="@style/Widget.AppCompat.Button"
+        android:backgroundTint="@android:color/background_light"
+        android:layout_marginTop="18dp"
+        android:visibility="visible"
+        android:layout_below="@+id/searchView"
+        android:layout_alignParentStart="true"
+        android:onClick="onClick"/>
+
+</RelativeLayout>

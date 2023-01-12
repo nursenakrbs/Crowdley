@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#6bffa6"
+    tools:context="com.thelaters.cs102project.crowdleyv20.CafeList">
+
+    <Button
+        android:id="@+id/button32"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/button31"
+        android:layout_marginTop="18dp"
+        android:background="@android:color/background_light"
+        android:onClick="openPlace"
+        android:text="Starbucks" />
+
+    <Button
+        android:id="@+id/button31"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/button30"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/background_light"
+        android:onClick="openPlace"
+        android:text="Mozart Cafe" />
+
+    <Button
+        android:id="@+id/button30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/button9"
+        android:layout_alignLeft="@+id/button9"
+        android:layout_alignStart="@+id/button9"
+        android:layout_below="@+id/button9"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/background_light"
+        android:onClick="openPlace"
+        android:text="Speed Cafe" />
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:background="@android:color/holo_blue_light"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_editor_absoluteY="0dp">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:srcCompat="@mipmap/mylogo" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/button2"
+        android:layout_below="@+id/toolbar2"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="25dp"
+        android:fontFamily="serif-monospace"
+        android:text="CAFES"
+        android:textAlignment="center"
+        android:textColor="?attr/actionModeSplitBackground"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_alignParentStart="true" />
+
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="right"
+        android:layout_marginEnd="9dp"
+        android:layout_marginRight="9dp"
+        android:onClick="returnMap"
+        android:layout_marginTop="11dp"
+        android:background="@android:color/holo_blue_light"
+        app:srcCompat="@android:drawable/ic_dialog_map" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:background="@android:color/background_light"
+        android:onClick="openPlace"
+        android:text="Cafe In"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button2"
+        android:layout_alignStart="@+id/button2"
+        android:layout_below="@+id/button2"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/background_light"
+        android:onClick="openPlace"
+        android:text="Coffee Break"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:id="@+id/button10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/button32"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/background_light"
+        android:onClick="openPlace"
+        android:text="Main Campus Cafeteria" />
+
+    />
+
+
+</RelativeLayout>

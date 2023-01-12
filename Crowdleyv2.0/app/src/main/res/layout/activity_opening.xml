@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#84f2ac">
+
+    <TextView
+        android:text="CROWDLEY"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:textSize="40sp"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="8dp"
+        android:layout_above="@+id/textView3"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="Where is everyone?"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView3"
+        android:textSize="20sp"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="129dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/dsdfsd"
+        android:id="@+id/imageView"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginBottom="180dp" />
+</RelativeLayout>

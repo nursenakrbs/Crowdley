@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layerType="none"
+    tools:context="com.thelaters.cs102project.crowdleyv20.MapsActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_blue_light">
+
+            <Button
+                android:id="@+id/imageButton"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/ic_menu_sort_by_size"
+                android:textColor="@android:color/background_light"
+                android:textSize="36sp" />
+
+            <Button
+                android:id="@+id/button33"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@mipmap/mylogo" />
+
+        </android.support.v7.widget.Toolbar>
+
+        <fragment xmlns:map="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            tools:context="com.example.pc.cs102project.MapsActivity"
+            android:layout_below="@+id/toolbar5">
+
+        </fragment>
+
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/button6"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/toolbar5"
+            android:background="@android:color/holo_blue_light"
+            android:onClick="fak"
+            android:text="Buildings"
+            android:textColor="@android:color/background_light"
+            android:visibility="gone" />
+
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/button3"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignRight="@+id/button3"
+            android:layout_below="@+id/button3"
+            android:background="@android:color/holo_blue_light"
+            android:text="Cafes"
+            android:textColor="@android:color/background_light"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/button4"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignRight="@+id/button4"
+            android:layout_below="@+id/button4"
+            android:background="@android:color/holo_blue_light"
+            android:text="Open Areas"
+            android:textColor="@android:color/background_light"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/button5"
+            android:background="@android:color/holo_blue_light"
+            android:text="Sports Centers"
+            android:textColor="@android:color/background_light"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/button7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/button6"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignRight="@+id/button6"
+            android:layout_below="@+id/button6"
+            android:background="@android:color/holo_blue_light"
+            android:text="About"
+            android:textColor="@android:color/background_light"
+            android:visibility="gone" />
+
+
+    </RelativeLayout>
+
+</android.support.v4.widget.DrawerLayout>

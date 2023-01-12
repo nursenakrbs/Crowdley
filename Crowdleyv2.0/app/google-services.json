@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "790980081298",
+    "firebase_url": "https://crowdleyv20.firebaseio.com",
+    "project_id": "crowdleyv20",
+    "storage_bucket": "crowdleyv20.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:790980081298:android:b1e33315ea3d2d24",
+        "android_client_info": {
+          "package_name": "com.thelaters.cs102project.crowdleyv20"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "790980081298-43afau2j1f8aq7fhhg8hb5572ga6b7pp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.thelaters.cs102project.crowdleyv20",
+            "certificate_hash": "375765b10e70f5dbebf091d6b58101fb779bdfaa"
+          }
+        },
+        {
+          "client_id": "790980081298-e4u95f7f8j04mimpf4ou110gf67kb3kh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDL55ge8X_yoXv6TFZXiYSjNsLnYTttC_Y"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "790980081298-e4u95f7f8j04mimpf4ou110gf67kb3kh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
